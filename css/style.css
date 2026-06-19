@@ -11,7 +11,8 @@ body{
 }
 .profile-container, 
 .history-section, 
-.project-section{
+.project-section,
+.hobbies-section{
     padding: 2rem 1.5rem;
     box-shadow: 0 0 5px rgb(229,231,235);
     background-color: #FFFFFF;
@@ -32,7 +33,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 /*========= Profile ========*/
@@ -224,6 +225,11 @@ article
     gap: 1rem;
 }
 
+/*========= Hobbies Section ========*/
+article .hobbies-section{
+    margin-top: 1rem;
+}
+
 @media (min-width: 768px){
 main{
     flex-direction: row;
@@ -234,21 +240,28 @@ main{
 }
 article{
     flex-basis: 75%;
-    
+    max-height: 38rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
 }
 aside{
     align-items: start;
     flex-basis: 25%;
+    position: sticky;
+    top: 2rem;
 }
 aside 
 .profile-container,
 article 
-.history-section{
+.history-section,
+article .hobbies-section{
     border-radius: 0.25rem;
 }
 .profile-container, 
 .history-section, 
-.project-section{
+.project-section,
+.hobbies-section{
     max-width: 100%;   
     
 }
