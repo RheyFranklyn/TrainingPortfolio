@@ -32,6 +32,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 /*========= Profile ========*/
@@ -229,7 +230,7 @@ main{
     justify-content: start;
     align-items: start;
     gap: 1rem;
-    margin-top: 1rem;
+    
 }
 article{
     flex-basis: 75%;
